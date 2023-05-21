@@ -39,15 +39,11 @@ class MyDocument extends Document {
         />
 
         {/* Reservoir meta tags */}
-        <meta property="reservoir:title" content="Reservoir Market" />
-        <meta property="reservoir:icon" content="/reservoir-source-icon.png" />
+        <meta property="nftearth:title" content="NFTEarth" />
+        <meta property="nfearth:icon" content="/reservoir-source-icon.png" />
         <meta
           property="reservoir:token-url-mainnet"
           content="/collection/ethereum/${contract}/${tokenId}"
-        />
-        <meta
-          property="reservoir:token-url-goerli"
-          content="/collection/goerli/${contract}/${tokenId}"
         />
         <meta
           property="reservoir:token-url-polygon"
