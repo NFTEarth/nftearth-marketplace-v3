@@ -166,7 +166,7 @@ const HamburgerMenu = () => {
               >
                 <Text style="subtitle1">Portfolio</Text>
                 <Text style="body3" color="subtle">
-                  Manage your items, collections, listings and offers
+                 Manage your digital assets
                 </Text>
               </Flex>
             </Link>
@@ -238,7 +238,7 @@ const HamburgerMenu = () => {
                 </Text>
               </Link>
               <Anchor
-                href="https://docs.reservoir.tools/docs"
+                href="https://docs.nftearth.exchange"
                 target="_blank"
                 css={{
                   borderBottom: '1px solid $gray4',
@@ -266,7 +266,7 @@ const HamburgerMenu = () => {
             borderTop: '1px solid $gray4',
           }}
         >
-          <a href="https://twitter.com/reservoir0x" target="_blank">
+          <a href="https://twitter.com/nftearth_l2" target="_blank">
             <Button
               css={{ justifyContent: 'center', width: '44px', height: '44px' }}
               type="button"

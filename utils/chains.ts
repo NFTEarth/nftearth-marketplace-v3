@@ -25,9 +25,9 @@ type ReservoirChain = Chain & {
 export const DefaultChain: ReservoirChain = {
   ...mainnet,
   // Any url to display the logo of the chain in light mode
-  lightIconUrl: '/icons/eth-icon-dark.svg',
+  lightIconUrl: 'https://assets.coingecko.com/coins/images/279/small/ethereum.png?1595348880',
   // Any url to display the logo of the chain in dark mode
-  darkIconUrl: '/icons/eth-icon-light.svg',
+  darkIconUrl: 'https://assets.coingecko.com/coins/images/279/small/ethereum.png?1595348880',
   // The base url of the reservoir api, this is used in the app when
   // directly interacting with the reservoir indexer servers (in the api proxy for example)
   // or when prefetching server side rendered data
@@ -55,8 +55,8 @@ export default [
    {
     ...arbitrum,
     name: 'Arbitrum',
-    lightIconUrl: '/icons/arbitrum-icon-dark.svg',
-    darkIconUrl: '/icons/arbitrum-icon-light.svg',
+    lightIconUrl: 'https://assets.coingecko.com/asset_platforms/images/33/small/AO_logomark.png?1679733357',
+    darkIconUrl: 'https://assets.coingecko.com/asset_platforms/images/33/small/AO_logomark.png?1679733357',
     reservoirBaseUrl: 'https://api-arbitrum.reservoir.tools',
     proxyApi: '/api/reservoir/arbitrum',
     routePrefix: 'arbitrum',
@@ -65,8 +65,8 @@ export default [
   },
   {
     ...polygon,
-    lightIconUrl: '/icons/polygon-icon-dark.svg',
-    darkIconUrl: '/icons/polygon-icon-light.svg',
+    lightIconUrl: 'https://assets.coingecko.com/coins/images/4713/small/matic-token-icon.png?1624446912',
+    darkIconUrl: 'https://assets.coingecko.com/coins/images/4713/small/matic-token-icon.png?1624446912',
     reservoirBaseUrl: 'https://api-polygon.reservoir.tools',
     proxyApi: '/api/reservoir/polygon',
     routePrefix: 'polygon',
@@ -78,13 +78,13 @@ export default [
   {
     ...optimism,
     name: 'Optimism',
-    lightIconUrl: '/icons/optimism-icon-dark.svg',
-    darkIconUrl: '/icons/optimism-icon-light.svg',
+    lightIconUrl: 'https://assets.coingecko.com/asset_platforms/images/41/small/Optimistic_Ethereum_logo.png?1636951470',
+    darkIconUrl: 'https://assets.coingecko.com/asset_platforms/images/41/small/Optimistic_Ethereum_logo.png?1636951470',
     reservoirBaseUrl: 'https://api-optimism.reservoir.tools',
     proxyApi: '/api/reservoir/optimism',
     routePrefix: 'optimism',
     apiKey: process.env.OPTIMISM_RESERVOIR_API_KEY,
     coingeckoId: 'optimism',
   },
-  
+
 ] as ReservoirChain[]

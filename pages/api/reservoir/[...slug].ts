@@ -48,7 +48,9 @@ const proxy = async (req: NextApiRequest, res: NextApiResponse) => {
         return
       } else if (
         endpoint.includes(wrappedContracts['1'].toLowerCase()) ||
-        endpoint.includes(wrappedContracts['5'].toLowerCase())
+        endpoint.includes(wrappedContracts['42161'].toLowerCase()),
+        endpoint.includes(wrappedContracts['137'].toLowerCase()),
+        endpoint.includes(wrappedContracts['10'].toLowerCase())
       ) {
         res.redirect('/icons/currency/no-padding-weth.png')
         return
