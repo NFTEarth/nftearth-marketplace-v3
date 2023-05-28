@@ -18,6 +18,46 @@ import { formatUnits } from 'ethers/lib/utils.js'
 //like ETH/MATIC etc need to be fetched in a different way. Configure them below
 const currencies = [
   {
+    address: '0x912CE59144191C1204E64559FE8253a0e49E6548',
+    symbol: 'ARB',
+    decimals: arbitrum.nativeCurrency.decimals,
+    chain: {
+      id: arbitrum.id,
+      name: arbitrum.name,
+    },
+    coinGeckoId: 'arbitrum',
+  },
+  {
+    address: '0xb261104a83887ae92392fb5ce5899fcfe5481456',
+    symbol: 'NFTE',
+    decimals: arbitrum.nativeCurrency.decimals,
+    chain: {
+      id: arbitrum.id,
+      name: arbitrum.name,
+    },
+    coinGeckoId: 'nftearth',
+  },
+  {
+    address: constants.AddressZero,
+    symbol: 'ETH',
+    decimals: arbitrum.nativeCurrency.decimals,
+    chain: {
+      id: arbitrum.id,
+      name: arbitrum.name,
+    },
+    coinGeckoId: 'arbitrum',
+  },
+  {
+    address: '0x82aF49447D8a07e3bd95BD0d56f35241523fBab1',
+    symbol: 'WETH',
+    decimals: arbitrum.nativeCurrency.decimals,
+    chain: {
+      id: arbitrum.id,
+      name: arbitrum.name,
+    },
+    coinGeckoId: 'weth',
+  },
+  {
     address: constants.AddressZero,
     symbol: 'ETH',
     decimals: mainnet.nativeCurrency.decimals,
@@ -38,26 +78,6 @@ const currencies = [
     coinGeckoId: 'weth',
   },
   {
-    address: '0x82aF49447D8a07e3bd95BD0d56f35241523fBab1',
-    symbol: 'WETH',
-    decimals: arbitrum.nativeCurrency.decimals,
-    chain: {
-      id: arbitrum.id,
-      name: arbitrum.name,
-    },
-    coinGeckoId: 'weth',
-  },
-  {
-    address: '0x4200000000000000000000000000000000000006',
-    symbol: 'WETH',
-    decimals: optimism.nativeCurrency.decimals,
-    chain: {
-      id: optimism.id,
-      name: optimism.name,
-    },
-    coinGeckoId: 'weth',
-  },
-  {
     address: constants.AddressZero,
     symbol: 'MATIC',
     decimals: polygon.nativeCurrency.decimals,
@@ -67,6 +87,16 @@ const currencies = [
     },
     coinGeckoId: 'matic-network',
    },
+    {
+    address: '0x4200000000000000000000000000000000000006',
+    symbol: 'WETH',
+    decimals: optimism.nativeCurrency.decimals,
+    chain: {
+      id: optimism.id,
+      name: optimism.name,
+    },
+    coinGeckoId: 'weth',
+  },
 ]
 
 type EnhancedCurrency = (typeof currencies)[0] & {
