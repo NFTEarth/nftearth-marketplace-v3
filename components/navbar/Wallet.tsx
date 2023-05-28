@@ -7,7 +7,7 @@ import {
   FormatCurrency,
   Text,
 } from 'components/primitives'
-import { mainnet, polygon, optimism } from 'wagmi/chains'
+import { mainnet, arbitrum, polygon, optimism } from 'wagmi/chains'
 import { useAccount, useContractReads, erc20ABI, useBalance } from 'wagmi'
 import { BigNumber, BigNumberish, constants } from 'ethers'
 import useCoinConversion from 'hooks/useCoinConversion'
@@ -38,22 +38,12 @@ const currencies = [
     coinGeckoId: 'weth',
   },
   {
-    address: constants.AddressZero,
-    symbol: 'MATIC',
-    decimals: polygon.nativeCurrency.decimals,
-    chain: {
-      id: polygon.id,
-      name: polygon.name,
-    },
-    coinGeckoId: 'matic-network',
-  },
-  {
-    address: '0x7ceb23fd6bc0add59e62ac25578270cff1b9f619',
+    address: '0x82aF49447D8a07e3bd95BD0d56f35241523fBab1',
     symbol: 'WETH',
-    decimals: polygon.nativeCurrency.decimals,
+    decimals: arbitrum.nativeCurrency.decimals,
     chain: {
-      id: polygon.id,
-      name: polygon.name,
+      id: arbitrum.id,
+      name: arbitrum.name,
     },
     coinGeckoId: 'weth',
   },
@@ -67,6 +57,16 @@ const currencies = [
     },
     coinGeckoId: 'weth',
   },
+  {
+    address: constants.AddressZero,
+    symbol: 'MATIC',
+    decimals: polygon.nativeCurrency.decimals,
+    chain: {
+      id: polygon.id,
+      name: polygon.name,
+    },
+    coinGeckoId: 'matic-network',
+   },
 ]
 
 type EnhancedCurrency = (typeof currencies)[0] & {
