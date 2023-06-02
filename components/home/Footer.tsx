@@ -51,12 +51,12 @@ const companySectionLinks = [
     href: 'https://docs.nftearth.exchange/resources/brand-assets',
   },
   {
-    name: 'Terms',
-    href: 'https://nftearth.exchange/terms',
+    name: 'Contact Info: team@layer2nfts.org',
+    href: 'https://docs.nftearth.exchange/resources-and-features/contact',
   },
   {
-    name: 'Privacy',
-    href: 'https://nftearth.exchange/privacy',
+    name: 'About',
+    href: 'https://docs.nftearth.exchange',
   },
 ]
 
