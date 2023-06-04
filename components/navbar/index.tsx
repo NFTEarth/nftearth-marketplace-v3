@@ -127,14 +127,14 @@ const Navbar = () => {
           <Flex align="center" css={{ gap: '$5', mr: '$5' }}>
             <Link href="/collection-rankings">
               <NavItem active={router.pathname == '/collection-rankings'}>
-                Collections
+                Explore
               </NavItem>
             </Link>
             <Link href="/portfolio">
               <NavItem active={router.pathname == '/portfolio'}>Rewards</NavItem>
             </Link>
-            <Link href="https://docs.nftearth.exchange">
-              <NavItem active={false}>Docs</NavItem>
+            <Link href="https://staking.nftearth.exchange">
+              <NavItem active={false}>Staking</NavItem>
             </Link>
           </Flex>
         </Flex>
