@@ -89,7 +89,7 @@ const IndexPage: NextPage<Props> = ({ ssr }) => {
               NFTEarth
             </Text>
             <Text style="body1" css={{ mb: 48 }}>
-              Trade and Create NFTs on L2 and Earn Rewards
+              Trade and Create NFTs on L2
             </Text>
             <a
               href="https://mintearthling.nftearth.exchange"
