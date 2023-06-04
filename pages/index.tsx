@@ -85,17 +85,17 @@ const IndexPage: NextPage<Props> = ({ ssr }) => {
             align="center"
             css={{ mx: 'auto', maxWidth: 728, pt: '$5', textAlign: 'center' }}
           >
-            <Text style="h3" css={{ mb: 24 }}>
+            <Text style="h2" css={{ mb: 24 }}>
               NFTEarth
             </Text>
             <Text style="body1" css={{ mb: 48 }}>
               Trade and Create NFTs on L2 and Earn Rewards
             </Text>
             <a
-              href="https://github.com/nftearth"
+              href="https://mintearthling.nftearth.exchange"
               target="_blank"
             >
-              <Button color="gray3">View Our Source Code</Button>
+              <Button color="red3">Mint an Earthling NFT!</Button>
             </a>
           </Flex>
         )}
@@ -142,7 +142,7 @@ const IndexPage: NextPage<Props> = ({ ssr }) => {
                 }}
                 size="large"
               >
-                View All
+                View All NFTs
               </Button>
             </Link>
           </Box>
