@@ -95,7 +95,7 @@ const IndexPage: NextPage<Props> = ({ ssr }) => {
               href="https://mintearthling.nftearth.exchange"
               target="_blank"
             >
-              <Button color="red3">Mint an Earthling NFT!</Button>
+              <Button color="gray3">Mint an Earthling NFT!</Button>
             </a>
           </Flex>
         )}
