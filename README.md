@@ -31,7 +31,7 @@ NFTΞarth
 
 <br />
 
-The dAPP: [NFTEarth](https://nftearth.exchange)
+The dAPP: [NFTEarth](https://app.nftearth.exchange)
 
 # Mint 
 
@@ -45,7 +45,7 @@ One of the Earthling NFTs from the flagship collections from NFTEarth - **Earthl
 
 <br />
 
-Your **LP tokens** obtained from [Balancer](https://app.balancer.fi/#/arbitrum/pool/0x161cd105034ac000d2aad75f06c26e943130bc0e000200000000000000000426) on Arbitrum to begin earning staking rewards as part of the **NFTEarth Staking Rewards Program**
+Your **LP tokens** obtained from [Balancer](https://app.balancer.fi) to take part in the **NFTEarth Staking Rewards Program**
 
 <br />
 
